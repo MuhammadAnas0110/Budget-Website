@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,
+            wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,
+            900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <script src="./app.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="background"> 
+  
+      <div id="inputText" class="budget">Please enter your budget.
+             <!-- <h2>Total Budget</h2> -->
+             <input type="text" id="budgetInput">
+             <button onclick="totalBudget()">Submit</button>
+      </div>
+      
+      <div class="expense-div">
+        <div>Add your expense details</div>
+             <div class="expenselist" >
+                <div class="expense-type">
+                  Expense Name
+                 <input type="text" id="expenseNameInput" placeholder="Enter Expense Name">
+                 </div>
+                 <div  class="expense-type">
+                  Enter Amount
+                 <input type="text" id="expenseAmountInput" placeholder="Enter Expense Amount">
+                 </div>
+                 <div class="addExpenseBautton">
+                     <button onclick="addExpense()">Add Expense</button>
+                 </div>
+      </div>
+      
+      <div class="expenses-details-list"> Expenses Details
+        <div id="expenseList"></div>
+      </div>
+      
+      <div class="final-calculations">
+        <div class="final-calculations-amount" ><p>Total Budget: <span id="totalBudget"></span></p></div>
+        <div class="final-calculations-amount" ><p>Total Expenses: <span id="totalExpenses"></span></p></div>
+        <div class="final-calculations-amount" ><p>Remaining Amount: <span id="remainingAmount"></span></p></div>
+      </div>
+  </div> 
+</body>
+</html>
